@@ -40,10 +40,10 @@ public class DensityMapGUI extends Tool {
             "Richmond Hill",
             "Whitchurch-Stouffville",
             "Vaughan", };
-    private JComboBox cityList = new JComboBox<>(cityOptions); // Combo box which gives the list of cities
-    private JComboBox questionList = new JComboBox(); // Combo box to store question to ask to user
-    private JButton submitButton = new JButton("SUBMIT"); // Button to submit input results
-    private JTextArea userResults = new JTextArea(); // Text area for input results
+    private final JComboBox cityList = new JComboBox<>(cityOptions); // Combo box which gives the list of cities
+    private final JComboBox questionList = new JComboBox(); // Combo box to store question to ask to user
+    private final JButton submitButton = new JButton("SUBMIT"); // Button to submit input results
+    private final JTextArea userResults = new JTextArea(); // Text area for input results
     
     private BufferedImage aurora;
     private BufferedImage eastGwillimbury;
@@ -57,12 +57,12 @@ public class DensityMapGUI extends Tool {
     private BufferedImage[] maps = { aurora, eastGwillimbury, georgina, king, markham,
             newmarket, richmondHill, stouffville, vaughan }; // Buffered images for all cities on the map
     
-    private String[] mapNames = { "aurora", "eastGwillimbury", "georgina", "king", "markham",
+    private final String[] mapNames = { "aurora", "eastGwillimbury", "georgina", "king", "markham",
             "newmarket", "richmondHill", "stouffville", "vaughan" }; // Accessing name of a city for the map
-    private JLabel[] mapLabels = new JLabel[9]; // Array of labels with the map of the city
-    private JLabel[] cityLabels = new JLabel[9]; // Array of labels with the city text on it
-    private JLabel[] citySelectedLabels = new JLabel[9]; // Array of labels with selected map image
-    private JLabel hoverInformation = new JLabel();
+    private final JLabel[] mapLabels = new JLabel[9]; // Array of labels with the map of the city
+    private final JLabel[] cityLabels = new JLabel[9]; // Array of labels with the city text on it
+    private final JLabel[] citySelectedLabels = new JLabel[9]; // Array of labels with selected map image
+    private final JLabel hoverInformation = new JLabel();
     
     private int colourID; // Store colour ID for a map
     
