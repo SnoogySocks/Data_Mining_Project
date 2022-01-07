@@ -14,7 +14,7 @@
 </p>
 <div align="center">
   <a href="https://data-markham.opendata.arcgis.com/">
-    <img src="https://user-images.githubusercontent.com/71908175/148580177-4631f7d5-a085-4d46-a9d4-f3753a1c481e.png" style="width: 150px;"/>
+    <img src="https://user-images.githubusercontent.com/71908175/148580177-4631f7d5-a085-4d46-a9d4-f3753a1c481e.png" style="width: 130px;"/>
   </a>
 </div>
 
