@@ -89,7 +89,7 @@ public abstract class MyDataset {
                 }
                 
                 // Find the group the current category is in with binary search
-                int groupIndex = groupIndexes.get(binarySearch(groupIndexes, col));
+                int groupIndex = groupIndexes.get(lowerBound(groupIndexes, col));
                 String groupName = categoryRow.get(groupIndex);
                 
                 // Decrement to include shape area's first category
@@ -243,9 +243,9 @@ public abstract class MyDataset {
     /**
      * @param arr    = Array to search
      * @param target = target to search for
-     * @return the index of the starting interval the target is in in arr
+     * @return the index of the starting interval the target is in arr
      */
-    public static int binarySearch (ArrayList<Integer> arr, int target) {
+    public static int lowerBound (ArrayList<Integer> arr, int target) {
         
         int l, mid, r;
         l = 0;
